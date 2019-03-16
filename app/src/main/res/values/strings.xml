@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UserInterfaceToyApp</string>
+
+    <string name="button_send">Send</string>
+    <string name="text_view_received">This will show what is received</string>
+
+    <string name="intent_extra_key">intent_extra_key</string>
 </resources>
