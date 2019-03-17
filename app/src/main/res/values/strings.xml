@@ -5,4 +5,5 @@
     <string name="text_view_received">This will show what is received</string>
 
     <string name="intent_extra_key">intent_extra_key</string>
+    <string name="button_text">Button</string>
 </resources>

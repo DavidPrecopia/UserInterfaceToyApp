@@ -23,6 +23,10 @@
         <activity
             android:name=".SecondActivity"
             android:launchMode="singleTop" />
+
+        <activity
+            android:name=".ConstraintLayoutActivity"
+            android:launchMode="singleTop" />
     </application>
 
 </manifest>
