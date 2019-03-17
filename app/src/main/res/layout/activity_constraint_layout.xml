@@ -6,14 +6,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="@dimen/margin_normal">
+        android:layout_height="match_parent">
 
 
         <TextView
             android:id="@+id/text_view_top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
             android:text="Text;kl"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
             android:id="@+id/text_view_bottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_margin="@dimen/margin_normal"
             android:text="TextViels;djfklw"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_top"
@@ -39,13 +39,14 @@
             android:layout_height="wrap_content"
             app:barrierAllowsGoneWidgets="false"
             app:barrierDirection="end"
-            app:constraint_referenced_ids="text_view_top,text_view_bottom" />
+            app:constraint_referenced_ids="text_view_top,text_view_bottom"
+            tools:layout_editor_absoluteX="115dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/materialButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_margin="@dimen/margin_normal"
             android:text="@string/button_text"
             app:layout_constraintStart_toStartOf="@id/barrier"
             app:layout_constraintTop_toTopOf="parent" />
@@ -53,7 +54,7 @@
         <!--You can use this Group to mass change visibility-->
         <!--You can set default visibility with: android:visibility-->
         <androidx.constraintlayout.widget.Group
-            android:id="@+id/group"
+            android:id="@+id/group_barrier_example"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:constraint_referenced_ids="text_view_bottom,materialButton,text_view_top" />

@@ -26,7 +26,8 @@
 
         <activity
             android:name=".ConstraintLayoutActivity"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

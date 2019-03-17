@@ -21,6 +21,14 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(MainActivity.class.getSimpleName());
 
         initSendButton();
+        initStartConstraintLayoutActivity();
+    }
+
+
+    private void initStartConstraintLayoutActivity() {
+        binding.buttonStartConstraintLayout.setOnClickListener(v ->
+                startActivity(new Intent(this, ConstraintLayoutActivity.class))
+        );
     }
 
 
