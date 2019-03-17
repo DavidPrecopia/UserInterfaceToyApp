@@ -3,7 +3,7 @@ package com.example.userinterfacetoyapp;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.userinterfacetoyapp.databinding.ActivityMainBinding;
+import com.example.userinterfacetoyapp.databinding.ActivityMainSharedBinding;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.Nullable;
@@ -12,22 +12,26 @@ import androidx.databinding.DataBindingUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private ActivityMainSharedBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main_shared);
         getSupportActionBar().setTitle(MainActivity.class.getSimpleName());
 
         initSendButton();
-        initStartConstraintLayoutActivity();
+        initStartButtons();
     }
 
 
-    private void initStartConstraintLayoutActivity() {
-        binding.buttonStartConstraintLayout.setOnClickListener(v ->
-                startActivity(new Intent(this, ConstraintLayoutActivity.class))
+    private void initStartButtons() {
+        binding.buttonStartBarriersAspectRatioActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, BarriersAspectRatioActivity.class))
+        );
+
+        binding.buttonStartGoneChainGuidelinesActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, GoneChainGuidelinesActivity.class))
         );
     }
 

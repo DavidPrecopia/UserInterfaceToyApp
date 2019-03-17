@@ -6,5 +6,8 @@
 
     <string name="intent_extra_key">intent_extra_key</string>
     <string name="button_text">Button</string>
-    <string name="button_start_constraintlayout">Start ConstraintLayout</string>
+
+    <string name="button_start_barriersAspectRatioActivity">Start BarriersAspectRatioActivity</string>
+
+    <string name="button_start_GoneChainGuidelinesActivity">Start GoneChainGuidelinesActivity</string>
 </resources>

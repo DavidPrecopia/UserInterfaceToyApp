@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".GoneChainGuidelinesActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop">
@@ -23,9 +24,8 @@
         <activity
             android:name=".SecondActivity"
             android:launchMode="singleTop" />
-
         <activity
-            android:name=".ConstraintLayoutActivity"
+            android:name=".BarriersAspectRatioActivity"
             android:launchMode="singleTop"
             android:parentActivityName=".MainActivity" />
     </application>

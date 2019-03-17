@@ -3,19 +3,19 @@ package com.example.userinterfacetoyapp;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.userinterfacetoyapp.databinding.ActivityMainBinding;
+import com.example.userinterfacetoyapp.databinding.ActivityMainSharedBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
+    private ActivityMainSharedBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main_shared);
         getSupportActionBar().setTitle(SecondActivity.class.getSimpleName());
 
         initUiWithStartingIntent(getIntent());
