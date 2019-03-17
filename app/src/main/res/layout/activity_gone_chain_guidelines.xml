@@ -28,5 +28,52 @@
             app:layout_constraintTop_toTopOf="@+id/button1"
             app:layout_goneMarginStart="32dp"
             app:layout_goneMarginTop="32dp" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="250dp" />
+
+        <!--Because this is a horizontal chain, this View is the Head, thus it is where you put the `chainStyle` attribute-->
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Button"
+            app:layout_constraintEnd_toStartOf="@+id/button22"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <!--I can set weight-->
+        <!--With the below two buttons, I set width to match_constraints and give each a weight-->
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Button"
+            app:layout_constraintEnd_toStartOf="@+id/button23"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/button21"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="3"
+            app:layout_constraintStart_toEndOf="@+id/button22"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
