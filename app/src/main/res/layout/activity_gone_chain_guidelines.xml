@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Button2"
+            android:text="Hide Button1"
             app:layout_constraintStart_toEndOf="@+id/button1"
             app:layout_constraintTop_toTopOf="@+id/button1"
             app:layout_goneMarginStart="32dp"
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="250dp" />
+            app:layout_constraintGuide_percent="0.5" />
 
         <!--Because this is a horizontal chain, this View is the Head, thus it is where you put the `chainStyle` attribute-->
         <Button

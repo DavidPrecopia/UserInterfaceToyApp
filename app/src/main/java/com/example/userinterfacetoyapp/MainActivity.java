@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonStartGoneChainGuidelinesActivity.setOnClickListener(v ->
                 startActivity(new Intent(this, GoneChainGuidelinesActivity.class))
         );
+
+        binding.buttonStartPlaceholderAnimationsActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, PlaceholderAnimationsActivity.class))
+        );
     }
 
 

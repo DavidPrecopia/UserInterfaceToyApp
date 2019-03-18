@@ -8,6 +8,6 @@
     <string name="button_text">Button</string>
 
     <string name="button_start_barriersAspectRatioActivity">Start BarriersAspectRatioActivity</string>
-
     <string name="button_start_GoneChainGuidelinesActivity">Start GoneChainGuidelinesActivity</string>
+    <string name="button_start_PlaceholderAnimationsActivity">Start PlaceholderAnimationsActivity</string>
 </resources>
