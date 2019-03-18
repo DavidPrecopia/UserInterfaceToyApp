@@ -37,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonStartPlaceholderAnimationsActivity.setOnClickListener(v ->
                 startActivity(new Intent(this, PlaceholderAnimationsActivity.class))
         );
+
+        binding.buttonStartPlaceholderTemplateActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, PlaceholderTemplateActivity.class))
+        );
     }
 
 

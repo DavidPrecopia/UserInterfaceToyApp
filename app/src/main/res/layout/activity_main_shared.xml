@@ -13,7 +13,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:text="@string/button_start_barriersAspectRatioActivity"
             app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="@string/button_start_PlaceholderAnimationsActivity"
+            android:text="@string/button_start_PlaceholderTemplateActivity"
             app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintTop_toBottomOf="@id/button_start_PlaceholderAnimationsActivity" />
