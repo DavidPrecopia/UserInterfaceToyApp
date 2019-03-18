@@ -17,4 +17,5 @@
     <string name="button_start_GoneChainGuidelinesActivity">GoneChainGuidelinesActivity</string>
     <string name="button_start_PlaceholderAnimationsActivity">PlaceholderAnimationsActivity</string>
     <string name="button_start_PlaceholderTemplateActivity">PlaceholderTemplateActivity</string>
+    <string name="button_start_ConstraintSetActivity">ConstraintSetActivity</string>
 </resources>

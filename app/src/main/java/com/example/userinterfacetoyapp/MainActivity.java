@@ -41,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonStartPlaceholderTemplateActivity.setOnClickListener(v ->
                 startActivity(new Intent(this, PlaceholderTemplateActivity.class))
         );
+
+        binding.buttonStartConstraintSetActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, ConstraintSetActivity.class))
+        );
     }
 
 
