@@ -23,15 +23,15 @@ public class GoneChainGuidelinesActivity extends AppCompatActivity {
             switch (button1.getVisibility()) {
                 case View.VISIBLE:
                     button1.setVisibility(View.GONE);
-                    button2.setText("Show button1");
+                    button2.setText(getString(R.string.show_button1));
                     break;
                 case View.GONE:
                     button1.setVisibility(View.VISIBLE);
-                    button2.setText("Hide button1");
+                    button2.setText(getString(R.string.hide_button1));
                     break;
                 case View.INVISIBLE:
                     button1.setVisibility(View.VISIBLE);
-                    button2.setText("Hide button1");
+                    button2.setText(getString(R.string.hide_button1));
                     break;
             }
         });

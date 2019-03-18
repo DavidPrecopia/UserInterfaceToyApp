@@ -6,8 +6,15 @@
 
     <string name="intent_extra_key">intent_extra_key</string>
     <string name="button_text">Button</string>
+    <string name="tv_username">USERNAME</string>
+    <string name="tv_password">PASSWORD</string>
+    <string name="button1">Button1</string>
+    <string name="hide_button1">Hide Button1</string>
+    <string name="button">Button</string>
+    <string name="show_button1">Show Button1</string>
 
-    <string name="button_start_barriersAspectRatioActivity">Start BarriersAspectRatioActivity</string>
-    <string name="button_start_GoneChainGuidelinesActivity">Start GoneChainGuidelinesActivity</string>
-    <string name="button_start_PlaceholderAnimationsActivity">Start PlaceholderAnimationsActivity</string>
+    <string name="button_start_barriersAspectRatioActivity">BarriersAspectRatioActivity</string>
+    <string name="button_start_GoneChainGuidelinesActivity">GoneChainGuidelinesActivity</string>
+    <string name="button_start_PlaceholderAnimationsActivity">PlaceholderAnimationsActivity</string>
+    <string name="button_start_PlaceholderTemplateActivity">PlaceholderTemplateActivity</string>
 </resources>
