@@ -1,10 +1,11 @@
 package com.example.userinterfacetoyapp;
 
 import android.os.Bundle;
+import android.transition.ChangeBounds;
 import android.transition.TransitionManager;
+import android.view.animation.OvershootInterpolator;
 
 import com.example.userinterfacetoyapp.databinding.ActivityConstraintSetBinding;
-import com.example.userinterfacetoyapp.databinding.ConstraintSetDetailBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintSet;
@@ -13,7 +14,6 @@ import androidx.databinding.DataBindingUtil;
 public class ConstraintSetActivity extends AppCompatActivity {
 
     private ActivityConstraintSetBinding bindingNormal;
-    private ConstraintSetDetailBinding bindingDetail;
 
     private ConstraintSet constraintSetNormal;
     private ConstraintSet constraintSetDetail;
@@ -23,36 +23,32 @@ public class ConstraintSetActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        initLayouts();
-        initConstraintSets();
-        initClickListeners();
-    }
-
-    private void initLayouts() {
         bindingNormal = DataBindingUtil.setContentView(this, R.layout.activity_constraint_set);
-        bindingDetail = DataBindingUtil.inflate(getLayoutInflater(), R.layout.constraint_set_detail, null, false);
+        initConstraintSets();
+
+        // You only need to set a click listener on this Activity's root layout
+        bindingNormal.constraintLayoutRootNormal.setOnClickListener(v -> transitionLayout());
     }
 
     private void initConstraintSets() {
         constraintSetNormal = new ConstraintSet();
         constraintSetDetail = new ConstraintSet();
 
+        // This copies the constraints from the passed-in layouts
         constraintSetNormal.clone(bindingNormal.constraintLayoutRootNormal);
-        // This has been inflated in the method above.
-        // If it wasn't inflated, you would have to use: constraintSetDetail.clone(getApplicationContext(), R.layout.constraint_set_detail);
-        constraintSetDetail.clone(bindingDetail.constraintLayoutRootAlt);
-    }
-
-    private void initClickListeners() {
-        bindingNormal.constraintLayoutRootNormal.setOnClickListener(v -> transitionLayout());
-        bindingDetail.constraintLayoutRootAlt.setOnClickListener(v -> transitionLayout());
+        // Inflating this layout is overkill because ConstraintSet only clones the constraints of the passed-in layout
+        constraintSetDetail.clone(getApplicationContext(), R.layout.constraint_set_detail);
     }
 
 
     // I apply the constraints I want to this Activity's root layout
     private void transitionLayout() {
-        TransitionManager.beginDelayedTransition(bindingNormal.constraintLayoutRootNormal);
+        // This will add a "rubber-band" effect when the Views reach the end position
+        ChangeBounds changeBounds = new ChangeBounds();
+        changeBounds.setInterpolator(new OvershootInterpolator());
+
+        TransitionManager.beginDelayedTransition(bindingNormal.constraintLayoutRootNormal, changeBounds);
+
         if (normalLayout) {
             constraintSetDetail.applyTo(bindingNormal.constraintLayoutRootNormal);
             normalLayout = false;

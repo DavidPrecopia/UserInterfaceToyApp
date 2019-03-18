@@ -4,9 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_layout_root_alt"
+        android:id="@+id/constraint_layout_root_detail"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <!--
+            The styles of theses Views are ignored.
+            Only the styles of the original layout matter.
+            E.g., if the original layout has a scaleType of `center', and this has a scaleType of `fitStart` - the latter will be ignored/overwritten.
+            This is because ConstraintSet only saves the constraints of this (the secondary) layout.
+        -->
 
         <ImageView
             android:id="@+id/iv_main"
@@ -25,7 +32,6 @@
             android:id="@+id/iv_small"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginStart="8dp"
             app:layout_constraintDimensionRatio="4:3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_main"
