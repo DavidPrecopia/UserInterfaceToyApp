@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonStartConstraintSetActivity.setOnClickListener(v ->
                 startActivity(new Intent(this, ConstraintSetActivity.class))
         );
+
+        binding.buttonStartIncludeMergeActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, IncludeMergeActivity.class))
+        );
     }
 
 
