@@ -12,8 +12,7 @@
             android:id="@+id/button_start_barriersAspectRatioActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="@dimen/margin_medium"
             android:text="@string/button_start_barriersAspectRatioActivity"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +22,7 @@
             android:id="@+id/button_start_GoneChainGuidelinesActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_medium"
             android:text="@string/button_start_GoneChainGuidelinesActivity"
             app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
@@ -33,7 +32,7 @@
             android:id="@+id/button_start_PlaceholderAnimationsActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_medium"
             android:text="@string/button_start_PlaceholderAnimationsActivity"
             app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
@@ -43,7 +42,7 @@
             android:id="@+id/button_start_PlaceholderTemplateActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_medium"
             android:text="@string/button_start_PlaceholderTemplateActivity"
             app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
@@ -53,11 +52,21 @@
             android:id="@+id/button_start_ConstraintSetActivity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_medium"
             android:text="@string/button_start_ConstraintSetActivity"
             app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintTop_toBottomOf="@id/button_start_PlaceholderTemplateActivity" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_start_IncludeMergeActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/button_start_IncludeMergeActivity"
+            app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
+            app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
+            app:layout_constraintTop_toBottomOf="@id/button_start_ConstraintSetActivity" />
 
 
         <TextView

@@ -18,4 +18,5 @@
     <string name="button_start_PlaceholderAnimationsActivity">PlaceholderAnimationsActivity</string>
     <string name="button_start_PlaceholderTemplateActivity">PlaceholderTemplateActivity</string>
     <string name="button_start_ConstraintSetActivity">ConstraintSetActivity</string>
+    <string name="button_start_IncludeMergeActivity">IncludeMergeActivity</string>
 </resources>
