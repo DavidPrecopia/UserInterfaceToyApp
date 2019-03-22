@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonStartIncludeMergeActivity.setOnClickListener(v ->
                 startActivity(new Intent(this, IncludeMergeActivity.class))
         );
+
+        binding.buttonStartNavDrawerActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, NavDrawerActivity.class))
+        );
     }
 
 

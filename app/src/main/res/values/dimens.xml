@@ -4,4 +4,5 @@
     <dimen name="margin_normal">16dp</dimen>
 
     <dimen name="text_size_standard">16sp</dimen>
+    <dimen name="nav_drawer_header_stock_height">176dp</dimen>
 </resources>

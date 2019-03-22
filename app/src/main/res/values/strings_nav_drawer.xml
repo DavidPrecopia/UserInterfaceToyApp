@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_item_title_inbox">Inbox</string>
+    <string name="menu_item_title_trash">Trash</string>
+    <string name="menu_item_title_profile">Profile</string>
+
+    <string name="menu_category_title_share">Share</string>
+    <string name="menu_item_title_share">Share</string>
+    <string name="menu_item_title_send">Send</string>
+
+    <string name="header_user_name">David</string>
+    <string name="header_email_address">example@androiddev.com</string>
+</resources>
