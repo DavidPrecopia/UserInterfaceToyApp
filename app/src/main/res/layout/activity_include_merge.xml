@@ -25,5 +25,17 @@
             app:layout_constraintBottom_toTopOf="@id/include_progress_bar"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <!--
+            This does not work because the included layout has 2 buttons, and this
+            a ConstraintLayout - I cannot add constraints to either button.
+        -->
+        <include
+            android:id="@+id/including_merge"
+            layout="@layout/merge_two_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
