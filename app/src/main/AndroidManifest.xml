@@ -52,6 +52,10 @@
             android:launchMode="singleTop"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomViewActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

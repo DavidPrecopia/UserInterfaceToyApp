@@ -20,4 +20,5 @@
     <string name="button_start_ConstraintSetActivity">ConstraintSetActivity</string>
     <string name="button_start_IncludeMergeActivity">IncludeMergeActivity</string>
     <string name="button_start_NavDrawerActivity">NavDrawerActivity</string>
+    <string name="button_start_CustomViewActivity">CustomViewActivity</string>
 </resources>

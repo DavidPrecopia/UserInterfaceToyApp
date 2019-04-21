@@ -3,12 +3,12 @@ package com.example.userinterfacetoyapp;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.userinterfacetoyapp.databinding.ActivityMainSharedBinding;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+
+import com.example.userinterfacetoyapp.databinding.ActivityMainSharedBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
         binding.buttonStartNavDrawerActivity.setOnClickListener(v ->
                 startActivity(new Intent(this, NavDrawerActivity.class))
+        );
+
+        binding.buttonStartCustomViewActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, CustomViewActivity.class))
         );
     }
 
