@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.userinterfacetoyapp.customview.DetailCompoundView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:image="@drawable/android_image"
+                app:text="@string/app_name" />
+
+            <com.example.userinterfacetoyapp.customview.DetailCompoundView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:image="@drawable/ic_archive_black_24dp"
+                app:text="Archive" />
+
+            <com.example.userinterfacetoyapp.customview.DetailCompoundView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:image="@drawable/ic_attachment_black_24dp"
+                app:text="Attachment" />
+
+            <com.example.userinterfacetoyapp.customview.DetailCompoundView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:image="@drawable/ic_delete_black_24dp"
+                app:text="Delete" />
+
+            <com.example.userinterfacetoyapp.customview.DetailCompoundView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:image="@drawable/ic_explore_black_24dp"
+                app:text="Explore" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</layout>

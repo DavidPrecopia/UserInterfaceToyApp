@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonStartCustomViewActivity.setOnClickListener(v ->
                 startActivity(new Intent(this, CustomViewActivity.class))
         );
+
+        binding.buttonStartCompoundViewActivity.setOnClickListener(v ->
+                startActivity(new Intent(this, CompoundViewActivity.class))
+        );
     }
 
 

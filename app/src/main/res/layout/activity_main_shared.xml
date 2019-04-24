@@ -5,8 +5,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="@dimen/margin_normal">
+        android:layout_height="match_parent">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_start_barriersAspectRatioActivity"
@@ -84,17 +83,26 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_very_small"
             android:text="@string/button_start_CustomViewActivity"
-            app:layout_constraintEnd_toEndOf="@+id/button_start_NavDrawerActivity"
-            app:layout_constraintStart_toStartOf="@+id/button_start_NavDrawerActivity"
+            app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
+            app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
             app:layout_constraintTop_toBottomOf="@id/button_start_NavDrawerActivity" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_start_CompoundViewActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_very_small"
+            android:text="@string/button_start_CompoundViewActivity"
+            app:layout_constraintEnd_toEndOf="@+id/button_start_barriersAspectRatioActivity"
+            app:layout_constraintStart_toStartOf="@+id/button_start_barriersAspectRatioActivity"
+            app:layout_constraintTop_toBottomOf="@id/button_start_CustomViewActivity" />
 
         <androidx.constraintlayout.widget.Barrier
             android:id="@+id/barrier_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:barrierDirection="bottom"
-            app:constraint_referenced_ids="button_start_CustomViewActivity" />
+            app:constraint_referenced_ids="button_start_CompoundViewActivity" />
 
 
         <TextView

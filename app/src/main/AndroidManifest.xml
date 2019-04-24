@@ -56,6 +56,11 @@
             android:name=".CustomViewActivity"
             android:launchMode="singleTop"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CompoundViewActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+
     </application>
 
 </manifest>

@@ -21,4 +21,5 @@
     <string name="button_start_IncludeMergeActivity">IncludeMergeActivity</string>
     <string name="button_start_NavDrawerActivity">NavDrawerActivity</string>
     <string name="button_start_CustomViewActivity">CustomViewActivity</string>
+    <string name="button_start_CompoundViewActivity">CompoundViewActivity</string>
 </resources>
